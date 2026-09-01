@@ -378,6 +378,8 @@ h3 {
     border: 1px solid var(--line);
     border-radius: 12px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
     transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease
 }
 
@@ -424,7 +426,10 @@ h3 {
 }
 
 .service-card-body {
-    padding: 32px 24px 26px
+   padding: 32px 24px 26px;
+    display: flex;
+    flex-direction: column;
+    flex: 1
 }
 
 .service-card-body h3 {
@@ -432,9 +437,10 @@ h3 {
 }
 
 .service-card-body p {
-    color: var(--muted);
+   color: var(--muted);
     font-size: 14px;
-    margin: 0 0 16px
+    margin: 0 0 16px;
+    flex: 1
 }
 
 .service-card-link {
